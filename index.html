@@ -115,11 +115,27 @@
 <label for="Yes">Yes, please!</label><br>
 <input type="radio" id="Callout" name="Callout" value="No">
 <label for="No">No thank you, I'm good!</label><br>
-<div id="divExplain" style="display: none">
-  <label for="giveCallout">Are there any mechanics you can give callouts for?</label>
-  <input type="text" id="giveCallout" />
-</div>
 <hr>
+<h6>Are you ready to have fun?</h6>
+<label for="entertained" class="form-label">Yes</label>
+       <input
+         id="yesEnertained"
+         value="Yes"
+         name="entertained"
+         type="radio"
+       />
+       <label for="entertained" class="form-label">No</label>
+       <input
+         id="noEntertained"
+         value="No"
+         name="entertained"
+         type="radio"
+       />
+       <div id="divExplain" style="display: none">
+         <label for="explainNotEntertain">Please Explain Why Not</label>
+         <input type="text" id="explainNotEntertain" />
+</div>
+
 <label for="birthday">Birthday (This is for funsies!):</label>
 <input type="date" id="birthday" name="birthday">
 <hr>
