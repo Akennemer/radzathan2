@@ -21,12 +21,12 @@ $(document).ready(function () {
   });
 
 $("#submitButton").click(function () {
-    if ($("#noSpaces").val()) {
+    if ($("#name").val()) {
       console.log("there is something in this text box");
-      $("#noSpaces").removeClass("error");
+      $("name").removeClass("error");
     } else {
       console.log("there is NOTHING in this text box");
-      $("#noSpaces").removeClass("success").addClass("error").focus();
+      $("#name").removeClass("success").addClass("error").focus();
       //bring focus to it
       //change the placeholder text
     }
