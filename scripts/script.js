@@ -6,14 +6,14 @@ $(document).ready(function () {
     form.reset();
   });
 
-  $("input[type=radio][name=callout]").change(function () {
+ $("input[type=radio][name=entertained]").change(function () {
     //if they say no, display the textbox
 
     //get value of the thing
-    let callout = $("input[name=callout]:checked").val();
+    let entertain = $("input[name=entertained]:checked").val();
 
     //act accordingly
-    if (callout === "No") {
+    if (entertain === "No") {
       $("#divExplain").show();
     } else {
       $("#divExplain").hide();
